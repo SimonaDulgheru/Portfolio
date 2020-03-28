@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/style.css";
+import github from "../images/github.png";
+import linkedIn from "../images/linkedIn.png";
 
 const Contact = () => {
 	return (
@@ -47,7 +49,8 @@ const Contact = () => {
 					<h3 class='resume  resume-tablet resume-desktop'>
 						<a
 							href='https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							Resume
 						</a>
 					</h3>
@@ -55,16 +58,20 @@ const Contact = () => {
 				<div class='contact-links contact-links-mobile'>
 					<a
 						href='https://www.linkedin.com/in/simona-dulgheru-36777ba3/'
-						target='_blank'>
+						target='_blank'
+						rel='noopener noreferrer'>
 						<img
-							src='./images/linked-in-icon-png-14.png'
+							src={linkedIn}
 							class='icon-linkedin'
 							alt='LinkedIn-link'
 						/>
 					</a>
-					<a href='https://github.com/SimonaDulgheru' target='_blank'>
+					<a
+						href='https://github.com/SimonaDulgheru'
+						target='_blank'
+						rel='noopener noreferrer'>
 						<img
-							src='./images/download (3).png'
+							src={github}
 							class='icon-github'
 							alt='Github-link'
 						/>

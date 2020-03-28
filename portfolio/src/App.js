@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 // import "./script";
@@ -16,7 +16,7 @@ function App() {
 				<Navbar />
 
 				<Route exact path='/about' component={About} />
-				<Route exact path='/portfolio' component={Portfolio} />
+				<Route exact path='/portfolio' component={Projects} />
 				<Route exact path='/contact' component={Contact} />
 
 				<Footer />

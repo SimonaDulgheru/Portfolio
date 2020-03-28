@@ -5,8 +5,8 @@ import React from "react";
 const Footer = () => {
 	return (
 		<div>
-			<footer class='footer footer-desktop'>
-				<p class='paragraph-footer p-footer-desktop'>
+			<footer className='footer footer-desktop'>
+				<p className='paragraph-footer p-footer-desktop'>
 					Copyright &copy; SD
 				</p>
 			</footer>
