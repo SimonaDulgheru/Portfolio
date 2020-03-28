@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import email from "../images/email.png";
-
 import github from "../images/github.png";
 import linkedIn from "../images/linkedIn.png";
 import "../css/style.css";
@@ -24,8 +22,8 @@ const portfolio = [
 	},
 	{
 		title: "Note Taker",
-		appUrl: "https://simonadulgheru.github.io/Daily-Planner/",
-		github: "https://github.com/SimonaDulgheru/Daily-Planner",
+		appUrl: "https://frozen-cove-51764.herokuapp.com/",
+		github: "https://github.com/SimonaDulgheru/Note-Taker",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png"
 	},
@@ -82,7 +80,8 @@ const Projects = () => {
 							<h3 class='resume resume-tablet resume-desktop'>
 								<a
 									href='https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing'
-									target='_blank'>
+									target='_blank'
+									rel='noopener noreferrer'>
 									Resume
 								</a>
 							</h3>
@@ -90,7 +89,8 @@ const Projects = () => {
 						<div class='contact-links contact-links-mobile'>
 							<a
 								href='https://github.com/SimonaDulgheru'
-								target='_blank'>
+								target='_blank'
+								rel='noopener noreferrer'>
 								<img
 									src={github}
 									class='icon-github'
@@ -99,7 +99,8 @@ const Projects = () => {
 							</a>
 							<a
 								href='mailto:s.c.dulgheru@gmail.com'
-								target='_blank'>
+								target='_blank'
+								rel='noopener noreferrer'>
 								<img
 									src={email}
 									class='icon-mail'
@@ -108,7 +109,8 @@ const Projects = () => {
 							</a>
 							<a
 								href='https://www.linkedin.com/in/simona-dulgheru-36777ba3/'
-								target='_blank'>
+								target='_blank'
+								rel='noopener noreferrer'>
 								<img
 									src={linkedIn}
 									class='icon-linkedin'

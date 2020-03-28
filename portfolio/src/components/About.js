@@ -1,13 +1,16 @@
 import React from "react";
-import Navbar from "./Navbar";
+import email from "../images/email.png";
+import github from "../images/github.png";
+import linkedIn from "../images/linkedIn.png";
+import "../css/projects.css";
 
 const About = () => {
 	return (
 		<div>
-			<div className='wrapper-index wrapper-tablet-index wrapper-desktop-index'>
+			<div className='wrapper-index  wrapper-desktop-index'>
 				<h2>About Me</h2>
-				<div className='column-text column-text-tablet column-text-desktop-1'>
-					<p id='about-paragraph about-paragraph-desktop about-paragraph-tablet'>
+				<div className='column-text  column-text-desktop-1'>
+					<p id='about-paragraph about-paragraph-desktop '>
 						Full Stack Developer adept at building responsive Web
 						Applications from Front to Back with medical background.
 						Passionate about learning new technologies, bringing
@@ -42,6 +45,50 @@ const About = () => {
 							in a creative and collaborative environment.
 						</p>
 					</p>{" "}
+				</div>
+				<div class='contacts contacts-mobile'>
+					<div class='resume-contact'>
+						<h3 class='resume resume-tablet resume-desktop'>
+							<a
+								href='https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing'
+								target='_blank'
+								rel='noopener noreferrer'>
+								Resume
+							</a>
+						</h3>
+					</div>
+					<div class='contact-links contact-links-mobile'>
+						<a
+							href='https://github.com/SimonaDulgheru'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<img
+								src={github}
+								class='icon-github'
+								alt='Github-link'
+							/>
+						</a>
+						<a
+							href='mailto:s.c.dulgheru@gmail.com'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<img
+								src={email}
+								class=' icon-mail'
+								alt='Email-link'
+							/>
+						</a>
+						<a
+							href='https://www.linkedin.com/in/simona-dulgheru-36777ba3/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<img
+								src={linkedIn}
+								class='icon-linkedin'
+								alt='LinkedIn-link'
+							/>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
