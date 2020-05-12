@@ -135,10 +135,12 @@
 	/* Index  */
 
 	.wrapper-index {
-		margin: 5em 0.5em;
+		/* margin: 5em 0.5em; */
 		background: #1b1b1b;
-		margin-left: 40px;
+		margin: 5em 0.5em 5em 2.5em;
+		/* margin-left: 2.5em;
 		margin-bottom: 5em;
+		margin-top: 5em; */
 	}
 
 	h2 {
@@ -457,7 +459,7 @@
 	.wrapper-desktop-index {
 		margin: 4.5em;
 		background: #181818;
-		padding: 0 3.5em;
+		padding: 0 2.5em;
 	}
 
 	h2 {
@@ -552,7 +554,7 @@
 	.resume-desktop {
 		font-family: "Roboto", sans-serif;
 		font-size: 1.3em;
-		/* margin: 0.5em; */
+
 		text-decoration: none;
 		text-transform: uppercase;
 		padding-bottom: 10px;
