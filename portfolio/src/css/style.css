@@ -239,6 +239,77 @@
 		color: #3bc0b9;
 	}
 
+	/* PORTFOLIO */
+
+	.portfolio {
+		margin: 5em 0.8em 0 0.8em;
+	}
+
+	.portfolio-images {
+		max-width: 100%;
+	}
+	.column-portfolio-mobile {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 0.01em solid #050505;
+		padding: 2em 0.8em;
+		background: #181818;
+		margin: 0 1em;
+	}
+
+	.about-project-mobile {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		padding: 0 1em;
+		color: #979797;
+	}
+
+	.strong a {
+		font-size: 15px;
+		text-decoration: none;
+		color: #3bc0b9;
+	}
+
+	.about-project-mobile p {
+		text-align: center;
+		font-size: 12px;
+		padding-bottom: 1em;
+	}
+
+	.icon-github-portfolio-mobile {
+		width: 15%;
+		display: flex;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	/* .portfolio-images {
+		width: 90%;
+		height: 20%;
+	} */
+
+	footer {
+		background: #181818;
+		border-top: 0.5em solid #4aaaa5;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 5%;
+	}
+
+	.paragraph-footer {
+		font-family: "Roboto", sans-serif;
+		text-align: center;
+		font-size: 0.7em;
+		color: #979797;
+		margin-top: 1em;
+	}
+
 	/* Contact */
 
 	.wrapper-contact {
@@ -304,71 +375,6 @@
 	.input-form {
 		width: 100%;
 		margin-right: 2em;
-	}
-
-	/* PORTFOLIO */
-
-	.wrapper-portfolio {
-		margin: 1.5em;
-		background: #181818;
-		margin-bottom: 5em;
-	}
-
-	.column-portfolio-mobile {
-		min-width: 100%;
-		display: flex;
-		border-bottom: 0.01em solid #050505;
-		padding: 1em 0;
-	}
-
-	.about-project-mobile {
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-		padding: 0 1em;
-	}
-
-	.about-project-desktop .strong,
-	.about-project-desktop .stack-used {
-		font-size: 0.5em;
-	}
-
-	.about-project-mobile p {
-		text-align: center;
-		font-size: 0.5em;
-		padding-bottom: 1em;
-	}
-
-	.icon-github-portfolio-mobile {
-		width: 20%;
-		display: flex;
-		margin: 0 auto;
-	}
-
-	.portfolio-images {
-		width: 60%;
-		margin-left: 1em;
-		display: flex;
-		justify-content: flex-start;
-		cursor: pointer;
-	}
-
-	footer {
-		background: #181818;
-		border-top: 0.5em solid #4aaaa5;
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		height: 5%;
-	}
-
-	.paragraph-footer {
-		font-family: "Roboto", sans-serif;
-		text-align: center;
-		font-size: 0.7em;
-		color: #979797;
-		margin-top: 1em;
 	}
 }
 

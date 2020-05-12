@@ -7,117 +7,113 @@ import "../css/projects.css";
 
 const portfolio = [
 	{
-		title: "Password Generator",
+		title: "PASSWORD GENERATOR",
+		stack: "Html CSS JavaScript",
+		description:
+			"An application that generates a random password based on user-selected criteria.",
 		appUrl: "https://simonadulgheru.github.io/Password-Generator/",
+		iconGitHub: "https://github.com/SimonaDulgheru?tab=repositories",
 		github: "https://github.com/SimonaDulgheru/Password-Generator",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/67195051-292c9900-f3f0-11e9-9c04-8c42916181aa.jpg",
 	},
 	{
-		title: "Daily Planner",
+		title: "DAILY PLANNER",
+		stack: "Html CSS JavaScript API",
+		description:
+			"A web application that provides a fully customizable To-Do list, together with a Map to find places and also to get information about the Weather at the user current location.",
 		appUrl: "https://simonadulgheru.github.io/Daily-Planner/",
 		github: "https://github.com/SimonaDulgheru/Daily-Planner",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/77826166-ad085100-7105-11ea-8bb2-5bd03add2e05.JPG",
 	},
 	{
-		title: "Note Taker",
-		appUrl: "https://frozen-cove-51764.herokuapp.com/",
-		github: "https://github.com/SimonaDulgheru/Note-Taker",
+		title: "GITHUB PDF GENERATOR",
+		stack: "ES6+ Node.js",
+		description:
+			"A command-line application that dynamically generates a PDF with a user’s profile from a GitHub.",
+		appUrl:
+			"https://user-images.githubusercontent.com/48987979/72345550-f67efd80-36cb-11ea-9315-240eb8bb5376.gif",
+		github: "https://github.com/SimonaDulgheru/Password-Generator",
 		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png",
+			"https://user-images.githubusercontent.com/48987979/72345550-f67efd80-36cb-11ea-9315-240eb8bb5376.gif",
 	},
 	{
-		title: "Student Lesson Register",
+		title: "STUDENT REGISTER",
+		stack: "ES6+ OOP",
+		description:
+			"This is a Lesson Planner application which allows the user to define a lesson, a teacher and also, records the attendance of students.",
 		appUrl: "https://github.com/SimonaDulgheru/Student-Lesson-Register",
 		github: "https://github.com/SimonaDulgheru/Student-Lesson-Register",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/70457185-959a4f00-1aa7-11ea-8fc9-aa884ea4174b.png",
 	},
 	{
-		title: "Employee Management System",
-		appUrl:
-			"https://user-images.githubusercontent.com/48987979/73276538-c31a9380-41e0-11ea-8eda-51f6114c9121.gif",
-		github: "https://github.com/SimonaDulgheru/Employee-Management-System",
+		title: "NOTE TAKER",
+		stack: "ES6+ MySQ",
+		description:
+			"An application that allows users to keep track of a lot of information, save and delete Notes.",
+		appUrl: "https://frozen-cove-51764.herokuapp.com/",
+		github: "https://github.com/SimonaDulgheru/Note-Taker",
 		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/73276538-c31a9380-41e0-11ea-8eda-51f6114c9121.gif",
+			"https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png",
+	},
+
+	{
+		title: "POLL APP",
+		stack: "HTML CSS Node.js Express.js ES6+ MySQL Sequelize MVC",
+		description:
+			"A web application that allow users to ask friends about different topics by creating their own Polls, send invitation to vote on created Poll, choose from set questions (own API).",
+		appUrl: "http://stark-plateau-24544.herokuapp.com/new",
+		github: "http://stark-plateau-24544.herokuapp.com/new",
+		imgSrc:
+			"https://user-images.githubusercontent.com/48987979/81668240-4aacab00-943c-11ea-98ce-df9a09c712fd.JPG",
 	},
 	{
-		title: "Recruitment App",
+		title: "WORKOUT TRACKER",
+		stack: "HTML CSS Node.js Express.js ES6+ MongoDB Mongoose",
+		description:
+			"This is an application that let users view, create and track daily workouts.",
 		appUrl: "https://afternoon-peak-27846.herokuapp.com/",
 		github: "https://github.com/SimonaDulgheru/Recruitment-App",
 		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/77226817-0bb45480-6b73-11ea-8c9f-d81eb8df3e24.JPG",
+			"https://user-images.githubusercontent.com/48987979/81669215-cf4bf900-943d-11ea-9145-5eb2ea70ca4b.jpg",
 	},
 ];
 
 const Projects = () => {
 	return (
 		<React.Fragment>
-			<h2 className="portfolio  portfolio-desktop">Portfolio</h2>
-
+			<div className="wrapper-portfolio wrapper-tablet-portfolio wrapper-desktop-portfolio">
+				<h2 className="portfolio  portfolio-desktop">Portfolio</h2>
+			</div>
 			{portfolio.map((app) => (
-				<div className="wrapper-portfolio wrapper-tablet-portfolio wrapper-desktop-portfolio">
-					<div className="column-portfolio-mobile  column-portfolio-desktop">
-						<a href={app.appUrl}>
+				<div className="column-portfolio-mobile  column-portfolio-desktop">
+					<a href={app.appUrl}>
+						<img
+							className="portfolio-images-desktop  portfolio-images"
+							src={app.imgSrc}
+							alt={app.title}
+						/>
+					</a>
+
+					<div className="about-project-desktop about-project-mobile">
+						<p className="strong">
+							<a href={app.github}>
+								<strong>{app.title}</strong>
+							</a>
+						</p>
+						<p className="stack-used">{app.stack}</p>
+						<p className="app-description">{app.description}</p>
+						<a
+							href="https://github.com/SimonaDulgheru/Password-Generator"
+							target="_blank">
 							<img
-								className="portfolio-images-desktop  portfolio-images"
-								src={app.imgSrc}
+								src={github}
+								className=" icon-github-portfolio icon-github-portfolio-mobile"
 								alt={app.title}
 							/>
 						</a>
-
-						<div className="about-project-desktop about-project-mobile">
-							<p className="strong">
-								<a href={app.github}>
-									<strong>{app.title}</strong>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div className="contacts contacts-mobile">
-						<div className="resume-contacts">
-							<h3 className="resume resume-tablet resume-desktop">
-								<a
-									href="https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing"
-									target="_blank"
-									rel="noopener noreferrer">
-									Resume
-								</a>
-							</h3>
-						</div>
-						<div className="contact-links contact-links-mobile">
-							<a
-								href="https://github.com/SimonaDulgheru"
-								target="_blank"
-								rel="noopener noreferrer">
-								<img
-									src={github}
-									className="icon-github"
-									alt="Github-link"
-								/>
-							</a>
-							<a
-								href="mailto:s.c.dulgheru@gmail.com"
-								target="_blank"
-								rel="noopener noreferrer">
-								<img
-									src={email}
-									className="icon-mail"
-									alt="Email-link"
-								/>
-							</a>
-							<a
-								href="https://www.linkedin.com/in/simona-dulgheru-36777ba3/"
-								target="_blank"
-								rel="noopener noreferrer">
-								<img
-									src={linkedIn}
-									className="icon-linkedin"
-									alt="LinkedIn-link"
-								/>
-							</a>
-						</div>
 					</div>
 				</div>
 			))}
