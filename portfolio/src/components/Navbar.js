@@ -12,7 +12,7 @@ export default class Navbar extends Component {
 		});
 	};
 	render() {
-		const menu = this.state.showMenu ? "hide" : "change";
+		const menu = this.state.showMenu ? "change" : "hide";
 		return (
 			<div>
 				<header className="header header-tablet header-desktop">
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
 							<div className="line line-3"></div>
 						</div>
 						<ul
-							className={`nav-links  change nav-links-tablet nav-links-desktop`}>
+							className={`nav-links hide change nav-links-tablet nav-links-desktop`}>
 							<li className="nav-item">
 								<Link to="/" className="link ">
 									About
@@ -52,10 +52,3 @@ export default class Navbar extends Component {
 		);
 	}
 }
-// const Navbar = () => {
-// 	return (
-
-// 	);
-// };
-
-// export default Navbar;

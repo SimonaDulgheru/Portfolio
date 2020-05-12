@@ -35,37 +35,38 @@ const About = () => {
 						<br />
 						My core strengths include, but are not limited to the
 						following:
-						<ul className="skills-list">
-							<li>
-								Having an approachable and professional manner
-								at all times.
-							</li>
-							<li>
-								The written and verbal communication skills
-								required to articulate effectively to your
-								Technology Team.
-							</li>
-							<li>Creativity and willingness to learn.</li>
-							<li>
-								Adaptability and implementing new designs when
-								required.
-							</li>
-						</ul>
+					</p>
+					<ul className="skills-list">
+						<li>
+							Having an approachable and professional manner at
+							all times.
+						</li>
+						<li>
+							The written and verbal communication skills required
+							to articulate effectively to your Technology Team.
+						</li>
+						<li>Creativity and willingness to learn.</li>
+						<li>
+							Adaptability and implementing new designs when
+							required.
+						</li>
+					</ul>
+					<p id="about-paragraph about-paragraph-desktop ">
 						For the future, I wish to continue learning and grow in
 						a creative and collaborative environment.
-					</p>{" "}
+					</p>
+				</div>
+				<div className="resume-contact">
+					<h3 className="resume resume-tablet resume-desktop">
+						<a
+							href="https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing"
+							target="_blank"
+							rel="noopener noreferrer">
+							Resume
+						</a>
+					</h3>
 				</div>
 				<div className="contacts contacts-mobile">
-					{/* <div className="resume-contact">
-						<h3 className="resume resume-tablet resume-desktop">
-							<a
-								href="https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing"
-								target="_blank"
-								rel="noopener noreferrer">
-								Resume
-							</a>
-						</h3>
-					</div> */}
 					<div className="contact-links contact-links-mobile">
 						<a
 							href="https://github.com/SimonaDulgheru?tab=repositories"
