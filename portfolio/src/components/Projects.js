@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import email from "../images/email.png";
 import github from "../images/github.png";
 import linkedIn from "../images/linkedIn.png";
-
 import "../css/style.css";
 import "../css/projects.css";
 import Aos from "aos";
@@ -92,39 +91,76 @@ const Projects = () => {
 		<React.Fragment>
 			<div className="wrapper-portfolio wrapper-tablet-portfolio wrapper-desktop-portfolio">
 				<h2 className="portfolio  portfolio-desktop">Portfolio</h2>
-			</div>
-			{portfolio.map((app) => (
-				<div
-					data-aos="fade-right"
-					className="column-portfolio-mobile  column-portfolio-desktop">
-					<a href={app.appUrl}>
-						<img
-							data-aos="fade-right"
-							className="portfolio-images-desktop  portfolio-images"
-							src={app.imgSrc}
-							alt={app.title}
-						/>
-					</a>
 
-					<div className="about-project-desktop about-project-mobile">
-						<p className="strong">
-							<strong>{app.title}</strong>
-						</p>
-						<p className="stack-used">{app.stack}</p>
-						<p className="app-description">{app.description}</p>
+				{portfolio.map((app) => (
+					<div
+						data-aos="slide-up"
+						className="column-portfolio-mobile  column-portfolio-desktop">
+						<a href={app.appUrl}>
+							<img
+								data-aos="fade-right"
+								className="portfolio-images-desktop  portfolio-images"
+								src={app.imgSrc}
+								alt={app.title}
+							/>
+						</a>
+
+						<div className="about-project-desktop about-project-mobile">
+							<p className="strong">
+								<strong>{app.title}</strong>
+							</p>
+							<p className="stack-used">{app.stack}</p>
+							<p className="app-description">{app.description}</p>
+							<a
+								href={app.github}
+								target="_blank"
+								rel="noopener noreferrer">
+								<img
+									src={github}
+									className=" icon-github-portfolio icon-github-portfolio-mobile"
+									alt={app.title}
+								/>
+							</a>
+						</div>
+					</div>
+				))}
+				<div
+					data-aos="slide-up"
+					className="contacts contacts-portfolio ">
+					<div className="contact-links contact-links-portfolio ">
 						<a
-							href={app.github}
+							href="https://github.com/SimonaDulgheru?tab=repositories"
 							target="_blank"
 							rel="noopener noreferrer">
 							<img
 								src={github}
-								className=" icon-github-portfolio icon-github-portfolio-mobile"
-								alt={app.title}
+								className="icon-github"
+								alt="Github-link"
+							/>
+						</a>
+						<a
+							href="mailto:s.c.dulgheru@gmail.com"
+							target="_blank"
+							rel="noopener noreferrer">
+							<img
+								src={email}
+								className="icon-mail"
+								alt="Email-link"
+							/>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/simona-dulgheru-36777ba3/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<img
+								src={linkedIn}
+								className="icon-linkedin"
+								alt="LinkedIn-link"
 							/>
 						</a>
 					</div>
 				</div>
-			))}
+			</div>
 		</React.Fragment>
 	);
 };

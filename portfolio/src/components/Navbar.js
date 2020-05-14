@@ -15,9 +15,7 @@ export default class Navbar extends Component {
 		const menu = this.state.showMenu ? "change" : "hide";
 		return (
 			<div>
-				<header
-					data-aos="fade-out"
-					className="header header-tablet header-desktop">
+				<header className="header header-tablet header-desktop">
 					<h1 className="logo logo-tablet logo-desktop">
 						{" "}
 						Simona Dulgheru
@@ -25,24 +23,24 @@ export default class Navbar extends Component {
 					<nav className={`nav nav-tablet nav-desktop  ${menu}`}>
 						<div
 							onClick={this.toggleMenu}
-							className={`hamburger-menu `}>
+							className="hamburger-menu">
 							<div className="line line-1"></div>
 							<div className="line line-2"></div>
 							<div className="line line-3"></div>
 						</div>
 						<ul
 							className={`nav-links hide change nav-links-tablet nav-links-desktop`}>
-							<li className="nav-item">
+							<li onClick={this.toggleMenu} className="nav-item">
 								<Link to="/" className="link ">
 									About
 								</Link>
 							</li>
-							<li className="nav-item">
+							<li onClick={this.toggleMenu} className="nav-item">
 								<Link to="/portfolio" className="link ">
 									Portfolio
 								</Link>
 							</li>
-							<li className="nav-item">
+							<li onClick={this.toggleMenu} className="nav-item">
 								<Link to="/contact" className="link">
 									Contact
 								</Link>

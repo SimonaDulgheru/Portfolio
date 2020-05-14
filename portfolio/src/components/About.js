@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import email from "../images/email.png";
 import github from "../images/github.png";
 import linkedIn from "../images/linkedIn2.png";
 import "../css/projects.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 	return (
 		<div>
 			<div className="wrapper-index  wrapper-desktop-index">
 				<h2>About Me</h2>
-				<div className="column-text  column-text-desktop-1">
+				<div
+					data-aos="fade-right"
+					className="column-text  column-text-desktop-1">
 					<p id="about-paragraph about-paragraph-desktop ">
 						Full Stack Developer adept at building responsive Web
 						Applications from Front to Back with medical background.
@@ -57,7 +64,9 @@ const About = () => {
 					</p>
 				</div>
 				<div className="resume-contact">
-					<h3 className="resume resume-tablet resume-desktop">
+					<h3
+						data-aos="fade-right"
+						className="resume resume-tablet resume-desktop">
 						<a
 							href="https://drive.google.com/file/d/1_q-1aaqGq0epz6FJ-ArKbhkPVG0NWKXE/view?usp=sharing"
 							target="_blank"
@@ -66,7 +75,7 @@ const About = () => {
 						</a>
 					</h3>
 				</div>
-				<div className="contacts contacts-mobile">
+				<div data-aos="fade-right" className="contacts contacts-mobile">
 					<div className="contact-links contact-links-mobile">
 						<a
 							href="https://github.com/SimonaDulgheru?tab=repositories"

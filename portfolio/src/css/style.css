@@ -6,8 +6,8 @@
 	}
 
 	html {
-		background-image: url(../images/binary-code-abstract-lu.jpg);
-		background-size: cover;
+		background-image: url(../images/binary-code.jpg);
+		background-size: auto;
 	}
 
 	.body {
@@ -30,6 +30,7 @@
 		margin-right: 0em;
 		background: #1b1b1b;
 		border-bottom: 0.1em solid #050505;
+		z-index: 9;
 	}
 
 	.hamburger-menu {
@@ -42,6 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		z-index: 9;
 	}
 
 	.line {
@@ -49,7 +51,6 @@
 		height: 0.1em;
 		background-color: #4aaaa5;
 		transition: all 0.9s;
-		z-index: 3;
 	}
 
 	.change .line-1 {
@@ -70,6 +71,8 @@
 		top: 0;
 		right: -350px;
 		display: flex;
+		z-index: 9;
+
 		justify-content: center;
 		align-items: center;
 		transition: right 10s;
@@ -80,7 +83,7 @@
 		font-weight: bolder;
 		padding: 1em;
 		background: #1b1b1b;
-
+		z-index: 9;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -137,6 +140,7 @@
 	.wrapper-index {
 		background: #1b1b1b;
 		margin: 5em 0.5em 5em 2.5em;
+		overflow: hidden;
 	}
 
 	h2 {
@@ -162,6 +166,9 @@
 		color: #979797;
 		padding-top: 0.8em;
 	}
+	.column-portfolio-mobile {
+		z-index: -9;
+	}
 
 	.column-text {
 		width: 100%;
@@ -176,13 +183,14 @@
 		margin: 0 1em;
 		text-align: justify;
 		margin-bottom: 10px;
+		z-index: -9;
 	}
 
 	.contacts-mobile {
 		position: fixed;
 		top: 200px;
 		left: 0;
-		display: flex;
+
 		padding: 10px 5px;
 	}
 
@@ -241,17 +249,50 @@
 		margin: 5em 0.8em 0 0.8em;
 	}
 
-	.portfolio-images {
-		width: 90%;
-		height: 250px;
-		border: 4px solid #4aaaa5;
-		padding: 5px;
-		margin-left: 10px;
+	.contacts-portfolio {
+		position: absolute;
+		top: 150px;
+		left: 100px;
+		right: 100px;
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		z-index: 1;
+
+		padding: 10px 5px;
 	}
 
-	.portfolio-images a {
-		margin: 0 auto;
+	.contact-links-portfolio {
+		width: 120px;
+		display: flex;
+
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		background: rgb(22, 22, 22, 0.9);
+
+		padding: 5px;
 	}
+
+	.contact-links-portfolio a {
+		width: 100px;
+		padding-left: 5px;
+	}
+
+	img.icon-mail {
+		width: 35px;
+	}
+
+	.portfolio-images {
+		width: 90%;
+
+		border: 4px solid #4aaaa5;
+		padding: 5px;
+		/* margin-left: 5px; */
+	}
+
 	.column-portfolio-mobile {
 		max-width: 100%;
 		display: flex;
@@ -262,13 +303,14 @@
 		padding: 2em 0.3em;
 		background: #181818;
 		margin: 5em 1em;
+		position: relative;
 	}
 
 	.about-project-mobile {
 		display: flex;
 		flex-direction: column;
 		align-self: center;
-		padding: 0 1em;
+		padding: 0 0.5em;
 		color: #979797;
 	}
 
@@ -283,7 +325,7 @@
 		text-align: justify;
 		text-align: center;
 		font-size: 15px;
-		padding: 1em 0;
+		padding: 0.5em 0;
 	}
 
 	.icon-github-portfolio-mobile {
