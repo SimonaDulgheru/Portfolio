@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import email from "../images/email.png";
 import github from "../images/github.png";
 import linkedIn from "../images/linkedIn.png";
+
 import "../css/style.css";
 import "../css/projects.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const portfolio = [
 	{
@@ -34,7 +37,7 @@ const portfolio = [
 			"A command-line application that dynamically generates a PDF with a user’s profile from a GitHub.",
 		appUrl:
 			"https://user-images.githubusercontent.com/48987979/72345550-f67efd80-36cb-11ea-9315-240eb8bb5376.gif",
-		github: "https://github.com/SimonaDulgheru/Password-Generator",
+		github: "https://github.com/SimonaDulgheru/Pdf-Node-Portfolio",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/72345550-f67efd80-36cb-11ea-9315-240eb8bb5376.gif",
 	},
@@ -65,32 +68,38 @@ const portfolio = [
 		description:
 			"A web application that allow users to ask friends about different topics by creating their own Polls, send invitation to vote on created Poll, choose from set questions (own API).",
 		appUrl: "http://stark-plateau-24544.herokuapp.com/new",
-		github: "http://stark-plateau-24544.herokuapp.com/new",
+		github: "https://github.com/SimonaDulgheru/Poll-Project",
 		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/81668240-4aacab00-943c-11ea-98ce-df9a09c712fd.JPG",
+			"https://user-images.githubusercontent.com/48987979/81937841-07913a00-95ec-11ea-8910-122b0e0851d7.jpg",
 	},
 	{
 		title: "WORKOUT TRACKER",
 		stack: "HTML CSS Node.js Express.js ES6+ MongoDB Mongoose",
 		description:
 			"This is an application that let users view, create and track daily workouts.",
-		appUrl: "https://afternoon-peak-27846.herokuapp.com/",
-		github: "https://github.com/SimonaDulgheru/Recruitment-App",
+		appUrl: "https://arcane-wildwood-09350.herokuapp.com/",
+		github: "https://github.com/SimonaDulgheru/Workout-Tracker",
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/81669215-cf4bf900-943d-11ea-9145-5eb2ea70ca4b.jpg",
 	},
 ];
 
 const Projects = () => {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 	return (
 		<React.Fragment>
 			<div className="wrapper-portfolio wrapper-tablet-portfolio wrapper-desktop-portfolio">
 				<h2 className="portfolio  portfolio-desktop">Portfolio</h2>
 			</div>
 			{portfolio.map((app) => (
-				<div className="column-portfolio-mobile  column-portfolio-desktop">
+				<div
+					data-aos="fade-right"
+					className="column-portfolio-mobile  column-portfolio-desktop">
 					<a href={app.appUrl}>
 						<img
+							data-aos="fade-right"
 							className="portfolio-images-desktop  portfolio-images"
 							src={app.imgSrc}
 							alt={app.title}
@@ -99,15 +108,14 @@ const Projects = () => {
 
 					<div className="about-project-desktop about-project-mobile">
 						<p className="strong">
-							<a href={app.github}>
-								<strong>{app.title}</strong>
-							</a>
+							<strong>{app.title}</strong>
 						</p>
 						<p className="stack-used">{app.stack}</p>
 						<p className="app-description">{app.description}</p>
 						<a
-							href="https://github.com/SimonaDulgheru/Password-Generator"
-							target="_blank">
+							href={app.github}
+							target="_blank"
+							rel="noopener noreferrer">
 							<img
 								src={github}
 								className=" icon-github-portfolio icon-github-portfolio-mobile"

@@ -135,12 +135,8 @@
 	/* Index  */
 
 	.wrapper-index {
-		/* margin: 5em 0.5em; */
 		background: #1b1b1b;
 		margin: 5em 0.5em 5em 2.5em;
-		/* margin-left: 2.5em;
-		margin-bottom: 5em;
-		margin-top: 5em; */
 	}
 
 	h2 {
@@ -246,7 +242,15 @@
 	}
 
 	.portfolio-images {
-		max-width: 100%;
+		width: 90%;
+		height: 250px;
+		border: 4px solid #4aaaa5;
+		padding: 5px;
+		margin-left: 10px;
+	}
+
+	.portfolio-images a {
+		margin: 0 auto;
 	}
 	.column-portfolio-mobile {
 		max-width: 100%;
@@ -255,9 +259,9 @@
 		align-items: center;
 		justify-content: center;
 		border-bottom: 0.01em solid #050505;
-		padding: 2em 0.8em;
+		padding: 2em 0.3em;
 		background: #181818;
-		margin: 0 1em;
+		margin: 5em 1em;
 	}
 
 	.about-project-mobile {
@@ -268,16 +272,18 @@
 		color: #979797;
 	}
 
-	.strong a {
-		font-size: 15px;
+	.about-project-mobile p.strong {
+		font-size: 20px;
 		text-decoration: none;
 		color: #3bc0b9;
+		border-bottom: 2px solid #3bc0b9;
 	}
 
 	.about-project-mobile p {
+		text-align: justify;
 		text-align: center;
-		font-size: 12px;
-		padding-bottom: 1em;
+		font-size: 15px;
+		padding: 1em 0;
 	}
 
 	.icon-github-portfolio-mobile {
@@ -286,11 +292,6 @@
 		padding-bottom: 20px;
 		margin: 0 auto;
 	}
-
-	/* .portfolio-images {
-		width: 90%;
-		height: 20%;
-	} */
 
 	footer {
 		background: #181818;
@@ -572,7 +573,7 @@
 	}
 
 	.resume-desktop:hover::after {
-		width: 15%;
+		width: 7%;
 		transition: width 0.4s;
 	}
 

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
 import "../css/style.css";
 
@@ -11,11 +10,14 @@ export default class Navbar extends Component {
 			showMenu: !this.state.showMenu,
 		});
 	};
+
 	render() {
 		const menu = this.state.showMenu ? "change" : "hide";
 		return (
 			<div>
-				<header className="header header-tablet header-desktop">
+				<header
+					data-aos="fade-out"
+					className="header header-tablet header-desktop">
 					<h1 className="logo logo-tablet logo-desktop">
 						{" "}
 						Simona Dulgheru
