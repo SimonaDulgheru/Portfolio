@@ -16,7 +16,7 @@ const About = () => {
 				<h2>About Me</h2>
 				<div
 					data-aos="fade-right"
-					className="column-text  column-text-desktop-1">
+					className="column-text  column-text-desktop">
 					<p id="about-paragraph about-paragraph-desktop ">
 						Full Stack Developer adept at building responsive Web
 						Applications from Front to Back with medical background.
@@ -63,7 +63,7 @@ const About = () => {
 						a creative and collaborative environment.
 					</p>
 				</div>
-				<div className="resume-contact">
+				<div className="resume-contact ">
 					<h3
 						data-aos="fade-right"
 						className="resume resume-tablet resume-desktop">

@@ -106,7 +106,7 @@ const Projects = () => {
 						</a>
 
 						<div className="about-project-desktop about-project-mobile">
-							<p className="strong">
+							<p className="strong ">
 								<strong>{app.title}</strong>
 							</p>
 							<p className="stack-used">

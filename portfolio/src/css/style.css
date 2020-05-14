@@ -235,11 +235,6 @@
 		color: #4aaaa5;
 	}
 
-	.resume a:hover {
-		text-decoration: none;
-		color: #3bc0b9;
-	}
-
 	/* PORTFOLIO */
 
 	.portfolio {
@@ -420,8 +415,7 @@
 	html {
 		background-image: url(../images/binary-code-abstract-lu.jpg);
 
-		background-size: cover;
-		background-repeat: no-repeat;
+		background-size: auto;
 	}
 
 	.body {
@@ -496,7 +490,7 @@
 	.wrapper-desktop-index {
 		margin: 4.5em;
 		background: #181818;
-		padding: 0 2.5em;
+		padding: 0 2em;
 	}
 
 	h2 {
@@ -525,7 +519,7 @@
 		font-size: 20px;
 	}
 
-	.column-text-desktop-1 {
+	.column-text-desktop {
 		font-family: "Roboto", sans-serif;
 		font-size: 20px;
 		color: #979797;
@@ -590,11 +584,11 @@
 
 	.resume-desktop {
 		font-family: "Roboto", sans-serif;
-		font-size: 1.3em;
-
+		font-size: 1.5em;
 		text-decoration: none;
 		text-transform: uppercase;
-		padding-bottom: 10px;
+		padding-bottom: 2em;
+		padding-left: 0.5em;
 	}
 
 	.resume-desktop a {
@@ -603,7 +597,7 @@
 	}
 
 	.resume-desktop:hover::after {
-		width: 7%;
+		width: 8%;
 		transition: width 0.4s;
 	}
 
@@ -618,71 +612,72 @@
 
 	/* Portfolio */
 
-	.wrapper-desktop-portfolio {
-		margin: 1.5em 10em;
-		background: #181818;
-		margin-bottom: 7em;
-		padding: 0 2em;
-	}
-
 	.portfolio-desktop {
-		color: #4aaaa5;
-		font-size: 2em;
-		text-align: center;
-		background: #181818;
-		width: 100%;
-		font-family: "Roboto", sans-serif;
-		margin-bottom: 1em;
-		border-bottom: 0.01em solid #050505;
+		margin: 3em 3em 0 2em;
 	}
 
 	.column-portfolio-desktop {
-		border-bottom: 0.01em solid #050505;
+		background: rgb(22, 22, 22, 0.9);
 		display: flex;
-		width: 100%;
-		padding: 2em 0;
+		flex-direction: row;
+		/* justify-content: space-evenly; */
+		align-items: center;
+		justify-content: center;
+		max-width: 90%;
+
+		padding: 3em 2em;
+		margin: 4em 0.5em 4em 4.5em;
 	}
 
-	.portfolio-images-desktop {
-		cursor: pointer;
-		width: 30em;
+	.column-portfolio-desktop a {
+		width: 70%;
 	}
 
-	/* img:hover {
-		transform: scale(1) rotateZ(-4deg);
-		-moz-transform: scale(1) rotateZ(-4deg);
-		-webkit-transform: scale(1) rotateZ(-4deg);
-		-o-transform: scale(1) rotateZ(-4deg);
-	} */
-	/* .contacts {
+	.column-portfolio-desktop .portfolio-images-desktop {
+		width: 60%;
+		border: 2px solid #4aaaa5;
+		padding: 0.5em;
+	}
+
+	.portfolio-images-desktop img {
+		margin: 1em 1.5em;
+	}
+
+	.contacts {
 		display: flex;
 		justify-content: space-between;
-	} */
-	/* .contact-links {
+	}
+	.contact-links {
 		display: flex;
-	} */
+	}
 
-	/* .icon-github-portfolio {
+	.icon-github-portfolio {
 		width: 4em;
-	} */
+	}
 
 	.about-project-desktop {
-		padding: 1em 5em;
+		width: 100%;
+		/* padding: 0 1em; */
 		text-align: center;
 		flex: 1;
-		justify-content: center;
-		align-items: center;
+		/* justify-content: center;
+		align-items: center; */
 	}
 
 	.about-project-desktop p {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 1em;
+		padding-bottom: 0.5em;
+		padding-top: 0.5em;
+		color: #979797;
+		font-size: 20px;
 	}
 
-	.about-project-desktop .strong,
-	.about-project-desktop .stack-used {
-		font-size: 1.5em;
+	.about-project-desktop p.strong {
+		color: #2e837f;
+		font-size: 20px;
+		border-bottom: 2px solid #2e837f;
+		/* padding: 0 1em; */
 	}
 
 	/* Contact */
