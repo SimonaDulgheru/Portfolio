@@ -52,7 +52,7 @@ const portfolio = [
 	},
 	{
 		title: "NOTE TAKER",
-		stack: "ES6+ MySQ",
+		stack: "ES6+ MySQL",
 		description:
 			"An application that allows users to keep track of a lot of information, save and delete Notes.",
 		appUrl: "https://frozen-cove-51764.herokuapp.com/",
@@ -109,7 +109,9 @@ const Projects = () => {
 							<p className="strong">
 								<strong>{app.title}</strong>
 							</p>
-							<p className="stack-used">{app.stack}</p>
+							<p className="stack-used">
+								<strong>{app.stack}</strong>
+							</p>
 							<p className="app-description">{app.description}</p>
 							<a
 								href={app.github}

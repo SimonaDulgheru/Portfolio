@@ -6,8 +6,7 @@
 	}
 
 	html {
-		background-image: url(../images/binary-code.jpg);
-		background-size: auto;
+		background-image: url(../images/binaryCode.jpg);
 	}
 
 	.body {
@@ -72,7 +71,6 @@
 		right: -350px;
 		display: flex;
 		z-index: 9;
-
 		justify-content: center;
 		align-items: center;
 		transition: right 10s;
@@ -129,7 +127,6 @@
 	h1 {
 		display: flex;
 		justify-content: flex-start;
-
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 1em;
 		text-transform: uppercase;
@@ -138,7 +135,7 @@
 	/* Index  */
 
 	.wrapper-index {
-		background: #1b1b1b;
+		background: rgb(22, 22, 22, 0.9);
 		margin: 5em 0.5em 5em 2.5em;
 		overflow: hidden;
 	}
@@ -166,6 +163,7 @@
 		color: #979797;
 		padding-top: 0.8em;
 	}
+
 	.column-portfolio-mobile {
 		z-index: -9;
 	}
@@ -190,7 +188,6 @@
 		position: fixed;
 		top: 200px;
 		left: 0;
-
 		padding: 10px 5px;
 	}
 
@@ -205,7 +202,7 @@
 		display: flex;
 		width: 35px;
 		flex-direction: column;
-		background: rgb(22, 22, 22, 0.9);
+		background: rgb(22, 22, 22, 0.8);
 		justify-content: center;
 		align-items: center;
 		padding: 0 5px;
@@ -255,24 +252,19 @@
 		left: 100px;
 		right: 100px;
 		display: flex;
-
 		justify-content: center;
 		align-items: center;
-
 		z-index: 1;
-
 		padding: 10px 5px;
 	}
 
 	.contact-links-portfolio {
 		width: 120px;
 		display: flex;
-
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		background: rgb(22, 22, 22, 0.9);
-
+		background: rgb(22, 22, 22, 0.8);
 		padding: 5px;
 	}
 
@@ -287,10 +279,8 @@
 
 	.portfolio-images {
 		width: 90%;
-
 		border: 4px solid #4aaaa5;
 		padding: 5px;
-		/* margin-left: 5px; */
 	}
 
 	.column-portfolio-mobile {
@@ -301,9 +291,10 @@
 		justify-content: center;
 		border-bottom: 0.01em solid #050505;
 		padding: 2em 0.3em;
-		background: #181818;
+		background: rgb(22, 22, 22, 0.9);
 		margin: 5em 1em;
 		position: relative;
+		z-index: 1;
 	}
 
 	.about-project-mobile {
@@ -343,6 +334,7 @@
 		bottom: 0;
 		left: 0;
 		height: 5%;
+		z-index: 2;
 	}
 
 	.paragraph-footer {
@@ -356,14 +348,14 @@
 	/* Contact */
 
 	.wrapper-contact {
-		margin: 1.5em;
-		background: #181818;
+		margin: 6em 1em;
+		background: rgb(22, 22, 22, 0.9);
 		margin-bottom: 5em;
 	}
 
 	input[type="text"] {
-		background: #686868;
-		color: black;
+		background: #b3b3b3;
+		width: 100%;
 		padding: 0.7em;
 		box-sizing: border-box;
 		margin-bottom: 1.5em;
@@ -371,7 +363,7 @@
 	}
 
 	.form-main {
-		padding: 1em;
+		padding: 2.5em 1em 2.5em 2.5em;
 		border-bottom: 0.01em solid #050505;
 	}
 
@@ -380,30 +372,31 @@
 		height: 8em;
 		padding: 12px 20px;
 		box-sizing: border-box;
-		background-color: #686868;
+		background: #b3b3b3;
 		font-size: 16px;
 		resize: none;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	label {
 		display: block;
 		padding-bottom: 0.7em;
+		padding-left: 0.5em;
 		color: #4aaaa5;
 		font-family: "Roboto", sans-serif;
 	}
 
 	::placeholder {
-		color: rgb(19, 19, 19);
+		color: rgb(78, 78, 78);
 		font-family: "Roboto", sans-serif;
 	}
 
 	.submit-button {
 		width: 50%;
 		display: block;
-		margin: 1.2em auto;
+		margin: 1em auto;
 		background-color: #4aaaa5;
-		color: black;
+		color: rgb(19, 19, 19);
 		padding: 1em;
 		font-family: "Roboto", sans-serif;
 		border: none;
@@ -413,11 +406,6 @@
 	.submit-button:hover {
 		background-color: #2e837f;
 		cursor: pointer;
-	}
-
-	.input-form {
-		width: 100%;
-		margin-right: 2em;
 	}
 }
 
@@ -445,7 +433,7 @@
 		margin-top: 0;
 	}
 
-	/* Header Nav Bar */
+	/* Header */
 
 	.header-desktop {
 		display: flex;
@@ -503,7 +491,7 @@
 		transition: width 0.4s;
 	}
 
-	/* Index Wrapper */
+	/* Index  */
 
 	.wrapper-desktop-index {
 		margin: 4.5em;
