@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import email from "../images/email.png";
 import github from "../images/github.png";
 import linkedIn from "../images/linkedIn.png";
+
 import "../css/style.css";
 import "../css/projects.css";
 import Aos from "aos";
@@ -96,14 +97,16 @@ const Projects = () => {
 					<div
 						data-aos="slide-up"
 						className="column-portfolio-mobile  column-portfolio-desktop">
-						<a href={app.appUrl}>
-							<img
-								data-aos="fade-right"
-								className="portfolio-images-desktop  portfolio-images"
-								src={app.imgSrc}
-								alt={app.title}
-							/>
-						</a>
+						<div className="portfolio-image">
+							<a href={app.appUrl}>
+								<img
+									data-aos="fade-right"
+									className="portfolio-images-desktop  portfolio-images"
+									src={app.imgSrc}
+									alt={app.title}
+								/>
+							</a>
+						</div>
 
 						<div className="about-project-desktop about-project-mobile">
 							<p className="strong ">
