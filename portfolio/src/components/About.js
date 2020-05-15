@@ -78,6 +78,7 @@ const About = () => {
 				<div data-aos="fade-right" className="contacts contacts-mobile">
 					<div className="contact-links contact-links-mobile">
 						<a
+							data-aos="zoom-in"
 							href="https://github.com/SimonaDulgheru?tab=repositories"
 							target="_blank"
 							rel="noopener noreferrer">

@@ -106,6 +106,9 @@ const Projects = () => {
 									alt={app.title}
 								/>
 							</a>
+							<div className="middle middle-mob-hide">
+								<div className="text">Live Preview</div>
+							</div>
 						</div>
 
 						<div className="about-project-desktop about-project-mobile">

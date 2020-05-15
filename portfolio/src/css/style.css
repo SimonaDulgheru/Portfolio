@@ -283,6 +283,10 @@
 		height: 20vh;
 	}
 
+	.middle-mob-hide {
+		display: none;
+	}
+
 	.column-portfolio-mobile {
 		max-width: 100%;
 		display: flex;
@@ -568,11 +572,11 @@
 	img.icon-github:hover,
 	img.icon-linkedin:hover,
 	img.icon-mail:hover {
-		transform: scale(1) rotateZ(360deg);
-		-moz-transform: scale(1) rotateZ(360deg);
-		-webkit-transform: scale(1) rotateZ(360deg);
-		-o-transform: scale(1) rotateZ(360deg);
-		transition: 1s;
+		transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		transition: 0.5s;
 	}
 
 	img.icon-github {
@@ -654,10 +658,41 @@
 	.portfolio-images-desktop {
 		cursor: pointer;
 		max-width: 70%;
+		border: 4px solid #4aaaa5;
+		padding: 0.5em;
+		opacity: 1;
+	}
+
+	.middle {
+		transition: 0.2s;
+		opacity: 0;
+
+		position: absolute;
+		top: 15%;
+		left: 22%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.text {
+		color: #929292;
+		font-size: 25px;
+		font-weight: 700;
+		/* padding: 16px; */
+	}
+
+	.portfolio-image a:hover {
+		opacity: 0.2;
+	}
+
+	.portfolio-image:hover .middle {
+		opacity: 1;
 	}
 
 	.portfolio-image {
 		width: 60%;
+		overflow: hidden;
 	}
 
 	.portfolio-image img {
@@ -667,6 +702,14 @@
 
 	.icon-github-portfolio {
 		width: 4em;
+	}
+
+	.icon-github-portfolio:hover {
+		transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		transition: 0.5s;
 	}
 
 	.about-project-desktop {
