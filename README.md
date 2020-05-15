@@ -2,7 +2,7 @@
 
 ### Deployed to Heroku
 
-### [My Portfolio](https://blooming-tundra-76539.herokuapp.com/contact)
+### [My Portfolio](https://portfoliosd.herokuapp.com/)
 
 ### ABOUT
 
