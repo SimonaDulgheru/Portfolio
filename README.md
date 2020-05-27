@@ -1,6 +1,6 @@
 ## Simona Dulgheru Web Developer
 
-### [My Portfolio](https://portfoliosd.herokuapp.com/) -Done in REACT
+### [My Portfolio](https://portfoliosd.herokuapp.com/) - Done in React
 
 ### ABOUT
 
