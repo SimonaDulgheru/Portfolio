@@ -31,6 +31,16 @@ const portfolio = [
 			"https://user-images.githubusercontent.com/48987979/77826166-ad085100-7105-11ea-8bb2-5bd03add2e05.JPG",
 	},
 	{
+		title: "STUDENT REGISTER",
+		stack: "ES6+ OOP",
+		description:
+			"This is a Lesson Planner application which allow users to define a teacher, a subject and also, records the attendance of students. Users can print the attendance sheet for further use. ",
+		appUrl: "https://simonadulgheru.github.io/Student-Register/",
+		github: "https://github.com/SimonaDulgheru/Student-Register",
+		imgSrc:
+			"https://user-images.githubusercontent.com/48987979/83054614-9d947e00-a04a-11ea-87c0-8eb349c42dca.JPG",
+	},
+	{
 		title: "GITHUB PDF GENERATOR",
 		stack: "ES6+ Node.js",
 		description:
@@ -41,16 +51,7 @@ const portfolio = [
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/72345550-f67efd80-36cb-11ea-9315-240eb8bb5376.gif",
 	},
-	{
-		title: "STUDENT REGISTER",
-		stack: "ES6+ OOP",
-		description:
-			"This is a Lesson Planner application which allows the user to define a lesson, a teacher and also, records the attendance of students.",
-		appUrl: "https://github.com/SimonaDulgheru/Student-Lesson-Register",
-		github: "https://github.com/SimonaDulgheru/Student-Lesson-Register",
-		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/70457185-959a4f00-1aa7-11ea-8fc9-aa884ea4174b.png",
-	},
+
 	{
 		title: "NOTE TAKER",
 		stack: "ES6+ MySQL",
@@ -96,26 +97,26 @@ const Projects = () => {
 				{portfolio.map((app) => (
 					<div
 						data-aos="slide-up"
-						className="column-portfolio-mobile  column-portfolio-desktop">
-						<div className="portfolio-image">
+						className="column-portfolio-mobile  column-portfolio-desktop column-portfolio-tb">
+						<div className="portfolio-image portfolio-image-tb">
 							<a href={app.appUrl}>
 								<img
 									data-aos="fade-right"
-									className="portfolio-images-desktop  portfolio-images"
+									className="portfolio-images-desktop  portfolio-images portfolio-images-tb"
 									src={app.imgSrc}
 									alt={app.title}
 								/>
 							</a>
-							<div className="middle middle-mob-hide">
-								<div className="text">Live Preview</div>
+							<div className="middle middle-tb middle-mob-hide">
+								<p className="text">Live Preview</p>
 							</div>
 						</div>
 
-						<div className="about-project-desktop about-project-mobile">
-							<p className="strong ">
+						<div className="about-project-desktop about-project-mobile about-project-tb">
+							<p className="strong strong-tb">
 								<strong>{app.title}</strong>
 							</p>
-							<p className="stack-used">
+							<p className="stack-used stack-used-tb">
 								<strong>{app.stack}</strong>
 							</p>
 							<p className="app-description">{app.description}</p>
