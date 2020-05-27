@@ -683,7 +683,11 @@
 	}
 
 	.portfolio-image a:hover {
-		opacity: 0.2;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.1)
+		);
 	}
 
 	.portfolio-image:hover .middle {

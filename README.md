@@ -1,19 +1,18 @@
 ## Simona Dulgheru Web Developer
 
-### Deployed to Heroku
-
-### [My Portfolio](https://portfoliosd.herokuapp.com/)
+### [My Portfolio](https://portfoliosd.herokuapp.com/) -Done in REACT
 
 ### ABOUT
 
-Full Stack Developer adept at building responsive Web Applications from Front to Back with medical background. Passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust applications suited to the user’s needs.
+Certified Full Stack Web Developer with Medical background (NHS). I am highly motivated person with good ability to work under-pressure, strong analytical, problem solving and logical thinking skills.
+I am passionate about learning new technologies, bringing ideas to life, and working with dedicated teams to build efficient and robust web applications suited to the user’s needs.
 
 ### EXPERIENCE - Full Stack Web DEveloper
 
 ## Solo Projects
 
--   [Password Generator ](https://github.com/SimonaDulgheru/Password-Generator)
--   [Student Lesson Register](https://github.com/SimonaDulgheru/Student-Lesson-Register)
+-   [Coding Quiz ](https://github.com/SimonaDulgheru/Coding-Quiz-App)
+-   [Student Register](https://github.com/SimonaDulgheru/Student-Register)
 -   [Git Profile Generator](https://github.com/SimonaDulgheru/Pdf-Node-Portfolio)
 -   [Note Taker ](https://github.com/SimonaDulgheru/Note-Taker)
 -   [Employee Tracker ](https://github.com/SimonaDulgheru/Employee-Management-System)
@@ -28,7 +27,9 @@ Full Stack Developer adept at building responsive Web Applications from Front to
 
 -   HTML
 -   CSS
--   JavaScript
+-   Bootstrap
+-   SASS
+-   JavaScript / jQuery
 -   ES6+
 -   JSON
 -   Node.js
@@ -42,7 +43,6 @@ Full Stack Developer adept at building responsive Web Applications from Front to
 -   Algorithms
 -   Postman
 -   Git
--   Agile
 -   Visual Studio
 -   Adobe Photoshop
 -   Adobe Illustrator
@@ -58,7 +58,7 @@ Full Stack Developer adept at building responsive Web Applications from Front to
 
 ### EXPERIENCE - Midwife
 
--   Spent 8 years as a successful Midwife working in the highest-pressure working environment there is. Now looking to turn my passion for coding into my purpose.
+-   Spent 8 years as a successful Midwife (NHS) working in the highest-pressure working environment there is. Now looking to turn my passion for coding into my purpose.
 
 ### EDUCATION
 

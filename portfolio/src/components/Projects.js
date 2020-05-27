@@ -10,15 +10,15 @@ import "aos/dist/aos.css";
 
 const portfolio = [
 	{
-		title: "PASSWORD GENERATOR",
+		title: "CODING QUIZ",
 		stack: "Html CSS JavaScript",
 		description:
-			"An application that generates a random password based on user-selected criteria.",
-		appUrl: "https://simonadulgheru.github.io/Password-Generator/",
-		iconGitHub: "https://github.com/SimonaDulgheru?tab=repositories",
-		github: "https://github.com/SimonaDulgheru/Password-Generator",
+			"With Coding Quiz App users can test their knowledge of various programming languages as JavaScript, PHP, Java. This quiz consists of 10 questions for each programming language with single or multiple-choice answers.",
+		appUrl: "https://simonadulgheru.github.io/Coding-Quiz-App/",
+
+		github: "https://github.com/SimonaDulgheru/Coding-Quiz-App",
 		imgSrc:
-			"https://user-images.githubusercontent.com/48987979/67195051-292c9900-f3f0-11e9-9c04-8c42916181aa.jpg",
+			"https://user-images.githubusercontent.com/48987979/82120114-bfa11d00-977b-11ea-9bdb-d8c16acc8979.jpg",
 	},
 	{
 		title: "DAILY PLANNER",
