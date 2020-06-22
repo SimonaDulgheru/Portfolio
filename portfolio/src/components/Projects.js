@@ -83,6 +83,16 @@ const portfolio = [
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/81669215-cf4bf900-943d-11ea-9145-5eb2ea70ca4b.jpg",
 	},
+	{
+		title: "RECRUITMENT APP",
+		stack: "MERN",
+		description:
+			"A MERN stack application that includes authentication and profile generator.",
+		appUrl: "https://afternoon-peak-27846.herokuapp.com/",
+		github: "https://github.com/SimonaDulgheru/Recruitment-App",
+		imgSrc:
+			"https://user-images.githubusercontent.com/48987979/77226817-0bb45480-6b73-11ea-8c9f-d81eb8df3e24.JPG",
+	},
 ];
 
 const Projects = () => {

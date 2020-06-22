@@ -22,6 +22,7 @@ I am passionate about learning new technologies, bringing ideas to life, and wor
 
 -   [Daily Planner ](https://github.com/SimonaDulgheru/Daily-Planner)
 -   [Poll App ](https://github.com/SimonaDulgheru/Poll-Project)
+-   [Recruitment App ](https://github.com/SimonaDulgheru/Recruitment-App)
 
 ### HARD SKILLS
 
@@ -39,7 +40,7 @@ I am passionate about learning new technologies, bringing ideas to life, and wor
 -   Mongoose
 -   React.js
 -   Ruby
--   TDD
+-   TDD / Jest
 -   Algorithms
 -   Postman
 -   Git
