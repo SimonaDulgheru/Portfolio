@@ -17,6 +17,7 @@ I am passionate about learning new technologies, bringing ideas to life, and wor
 -   [Note Taker ](https://github.com/SimonaDulgheru/Note-Taker)
 -   [Employee Tracker ](https://github.com/SimonaDulgheru/Employee-Management-System)
 -   [Workout -Tracker ](https://github.com/SimonaDulgheru/Workout-Tracker)
+-   [Employee-Directory-React ](https://employee-directory-sd.herokuapp.com/)
 
 ## Group Projects
 
@@ -29,7 +30,7 @@ I am passionate about learning new technologies, bringing ideas to life, and wor
 -   HTML
 -   CSS
 -   Bootstrap
--   SASS
+-   SASS/SCSS
 -   JavaScript / jQuery
 -   ES6+
 -   JSON
