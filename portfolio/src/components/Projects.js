@@ -84,6 +84,16 @@ const portfolio = [
 			"https://user-images.githubusercontent.com/48987979/81669215-cf4bf900-943d-11ea-9145-5eb2ea70ca4b.jpg",
 	},
 	{
+		title: "EMPLOYEE TABLE REACT",
+		stack: "SASS React.js",
+		description:
+			"This is a directory of company employees that is searchable and sortable by First / Last name, Department, Position, Email.",
+		appUrl: "https://employee-directory-sd.herokuapp.com/",
+		github: "https://github.com/SimonaDulgheru/Employee-Table-React",
+		imgSrc:
+			"https://user-images.githubusercontent.com/48987979/86634460-cacd3800-bfc9-11ea-9fd7-1bbf9f76aaf9.JPG",
+	},
+	{
 		title: "RECRUITMENT APP",
 		stack: "MERN",
 		description:
