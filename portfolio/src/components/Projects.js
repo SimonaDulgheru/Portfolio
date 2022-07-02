@@ -62,7 +62,6 @@ const portfolio = [
 		imgSrc:
 			"https://user-images.githubusercontent.com/48987979/71690698-5b1d8c80-2d9d-11ea-8134-b4d15dc43e28.png",
 	},
-
 	{
 		title: "POLL APP",
 		stack: "HTML CSS Node.js Express.js ES6+ MySQL Sequelize MVC",
@@ -117,19 +116,18 @@ const Projects = () => {
 				{portfolio.map((app) => (
 					<div
 						data-aos="slide-up"
-						className="column-portfolio-mobile  column-portfolio-desktop column-portfolio-tb">
+						className="column-portfolio-mobile column-portfolio-desktop column-portfolio-tb">
 						<div className="portfolio-image portfolio-image-tb">
 							<a href={app.appUrl}>
 								<img
 									data-aos="fade-right"
-									className="portfolio-images-desktop  portfolio-images portfolio-images-tb"
+									className="portfolio-images-desktop portfolio-images portfolio-images-tb"
+									target="_blank"
+									rel="noopener noreferrer"
 									src={app.imgSrc}
 									alt={app.title}
 								/>
 							</a>
-							<div className="middle middle-tb middle-mob-hide">
-								<p className="text">Live Preview</p>
-							</div>
 						</div>
 
 						<div className="about-project-desktop about-project-mobile about-project-tb">
