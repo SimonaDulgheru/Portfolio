@@ -68,7 +68,7 @@ const About = () => {
 						data-aos="fade-right"
 						className="resume resume-tablet resume-desktop">
 						<a
-							href="https://drive.google.com/file/d/1EzaO6GFFcAXjYcUpp6yIXHejjbnJPeyr/view?usp=sharing"
+							href="https://drive.google.com/file/d/1NmXMqFhJXu0qk9DnsKuKuqyXIuj7cBlL/view?usp=sharing"
 							target="_blank"
 							rel="noopener noreferrer">
 							Resume

@@ -1,6 +1,4 @@
 import React from "react";
-// import Navbar from "./Navbar";
-// import "../images/Poll App.jpg";
 
 const Footer = () => {
 	return (
